@@ -1,0 +1,61 @@
+What is Jenkins?
+Jenkins is an open-source continuous integration-continuous delivery and deployment (CI/CD) automation software DevOps tool written in the Java programming language. It is used to implement CI/CD workflows, called pipelines.
+
+Jenkins is a tool for automating software development processes, including building, testing, and deploying code. It is commonly used in a DevOps workflow to integrate and coordinate different stages of the software development lifecycle, such as continuous integration and continuous delivery.
+
+Jenkins achieves Continuous Integration with the help of plugins. Plugins allow the integration of Various DevOps stages. If you want to integrate a particular tool, you need to install the plugins for that tool. For example Git, Maven 2 project, Amazon EC2, HTML publisher etc.
+
+Freestyle project is the simplest and most basic type of job that can be created in Jenkins and it can be used to perform a variety of tasks such as building, testing, and deploying software.
+
+Creating a Jenkins freestyle project involves several steps:
+Log in to Jenkins and navigate to the main dashboard
+
+Click on the "New Item" button on the sidebar
+
+Give your project a name, select "Freestyle project" as the job type and click on "OK" button
+
+In the project configuration page, you can specify the source code management, build triggers, build environment, and build steps
+
+In the build step, you can specify the task you want to perform, such as executing shell commands, running scripts, or building with a specific tool
+
+Once you've configured your project, click on the "Save" button to create it
+
+You can now run the project by clicking on the "Build Now" button
+
+Create a freestyle pipeline to print "Hello World!!
+Steps for creating freestyle project:
+
+Install Jenkins on AWS EC2 Ubuntu instance.
+
+For Jenkins used port 8080, browse instance-public-IP/8080 it will open Jenkins dashboard.
+
+Log in to Jenkins and navigate to the main dashboard
+
+Click on the "New Item" button on the sidebar
+
+
+
+Give your project a name, select "Freestyle project" as the job type and click on "OK" button
+
+
+
+In the project configuration page, you can specify the source code management, build triggers, build environment, and build steps
+
+
+In the configuration section, scroll down to the "Build" section and add an "Execute shell" build step.
+
+
+In the build step, you can specify the task you want to perform and enter the command to print "Hello World", such as echo "Hello World!!"
+
+
+Click on the "Save" button at the bottom of the page to create the project.
+
+Once the project is created, click on the "Build Now" button.
+
+
+
+Check the console output for the "Hello World" message.
+
+
+
+Successfully created our first Jenkins Project.
